@@ -1,30 +1,36 @@
 /*
- * @Author: 严浩韦
- * @Date: 2018-04-28 17:04:09
- * @Last Modified by: 严浩韦
- * @Last Modified time: 2018-06-27 13:22:38
+ * @Author: 张博洋
+ * @Date: 2019-01-30 17:43:34
+ * @LastEditTime: 2021-07-16 15:50:12
+ * @LastEditors: 张博洋
+ * @Description: 
+ * @FilePath: /startSass-master/app/styles/components/color.scss
+ * 可以输入预定的版权声明、个性签名、空行等
  */
+
 //便于循环编写css 目前没有找到更好的办法
-$color:( "primary":red, // 主题颜色
-"title":#333, // 标题色
-"sub":#999, //副标题色
-"content":#666, //文字内容色
-"grey":#fcfcfc,
-"white":#fff, //白色
-"black":#000, //黑色
-"bg":#1d3e56, //背景颜色
-"bgLight":#363636, //稍浅背景颜色
-"greyBg":#fafafa, //浅色背景颜色
-"greyDark":#f2f2f2,
-"border":#eaeefb,
-"borderLight":#f3f3f3,
-"success":#57c90c,
-"error":#ff4048,
-"choose":#ffeced)!default;
+$color:("primary":red, // 主题颜色
+  "title":#333, // 标题色
+  "sub":#999, //副标题色
+  "content":#666, //文字内容色
+  "grey":#fcfcfc,
+  "white":#fff, //白色
+  "black":#000, //黑色
+  "bg":#1d3e56, //背景颜色
+  "bgLight":#363636, //稍浅背景颜色
+  "greyBg":#fafafa, //浅色背景颜色
+  "greyDark":#f2f2f2,
+  "border":#eaeefb,
+  "borderLight":#f3f3f3,
+  "success":#57c90c,
+  "error":#ff4048,
+  "choose":#ffeced) !default;
+
 @function color($n) {
-    @return map-get($color,$n);
+  @return map-get($color, $n);
 }
-$w :1500px!default;
+
+$w :1500px !default;
 // ==========================================================================
 
 // Media Query Ranges
