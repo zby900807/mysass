@@ -1,0 +1,45 @@
+/*
+ * @Author: 严浩韦
+ * @Date: 2018-04-28 17:04:09
+ * @Last Modified by: 严浩韦
+ * @Last Modified time: 2018-06-27 13:22:38
+ */
+//便于循环编写css 目前没有找到更好的办法
+$color:( "primary":red, // 主题颜色
+"title":#333, // 标题色
+"sub":#999, //副标题色
+"content":#666, //文字内容色
+"grey":#fcfcfc,
+"white":#fff, //白色
+"black":#000, //黑色
+"bg":#1d3e56, //背景颜色
+"bgLight":#363636, //稍浅背景颜色
+"greyBg":#fafafa, //浅色背景颜色
+"greyDark":#f2f2f2,
+"border":#eaeefb,
+"borderLight":#f3f3f3,
+"success":#57c90c,
+"error":#ff4048,
+"choose":#ffeced)!default;
+@function color($n) {
+    @return map-get($color,$n);
+}
+$w :1500px!default;
+// ==========================================================================
+
+// Media Query Ranges
+$small-screen-up: 601px !default;
+$medium-screen-up: 993px !default;
+$large-screen-up: 1201px !default;
+$small-screen: 600px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
+
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
+$extra-large-and-up: "only screen and (min-width : #{$large-screen-up})" !default;
+$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+$w-and-up: "only screen and (min-width : #{$w})" !default;
+$w-and-down: "only screen and (max-width : #{$w})" !default;
